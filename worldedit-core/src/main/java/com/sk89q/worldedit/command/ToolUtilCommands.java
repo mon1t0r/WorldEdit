@@ -39,7 +39,7 @@ public class ToolUtilCommands {
     }
 
     @Command(
-        aliases = { "/", "," },
+        aliases = { "spt", "," },
         usage = "[on|off]",
         desc = "Toggle the super pickaxe function",
         min = 0,

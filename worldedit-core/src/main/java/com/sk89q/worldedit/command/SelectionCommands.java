@@ -576,7 +576,7 @@ public class SelectionCommands {
     }
 
     @Command(
-        aliases = { "size" },
+        aliases = { "wsize" },
         flags = "c",
         usage = "",
         desc = "Get information about the selection",

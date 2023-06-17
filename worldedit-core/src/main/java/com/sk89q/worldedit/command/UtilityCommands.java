@@ -525,7 +525,7 @@ public class UtilityCommands {
     }
 
     @Command(
-        aliases = { "/help" },
+        aliases = { "whelp" },
         usage = "[<command>]",
         desc = "Displays help for WorldEdit commands",
         min = 0,
