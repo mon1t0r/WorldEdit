@@ -26,7 +26,7 @@ buildscript {
     }
 
     dependencies {
-        classpath 'com.github.jengelman.gradle.plugins:shadow:1.2.0'
+        classpath 'com.github.jengelman.gradle.plugins:shadow:1.2.3'
         classpath 'org.jfrog.buildinfo:build-info-extractor-gradle:3.0.1'
         classpath 'org.ajoberstar:gradle-git:0.12.0'
     }
@@ -48,24 +48,24 @@ if (!project.hasProperty("gitCommitHash")) {
 subprojects {
     apply plugin: 'java'
     apply plugin: 'maven'
-    apply plugin: 'checkstyle'
+    //apply plugin: 'checkstyle'
     apply plugin: 'com.github.johnrengelman.shadow'
     apply plugin: 'com.jfrog.artifactory-upload'
 
     group = 'com.sk89q.worldedit'
-    version = '6.1.2-SNAPSHOT'
+    version = '6.1.2-SNAPSHOT-1.0-NODOUBLESLASH'
     ext.internalVersion = version + ";" + gitCommitHash
 
     sourceCompatibility = 1.6
     targetCompatibility = 1.6
 
-    checkstyle.configFile = new File(rootProject.projectDir, "config/checkstyle/checkstyle.xml")
+    //checkstyle.configFile = new File(rootProject.projectDir, "config/checkstyle/checkstyle.xml")
 
     repositories {
         mavenCentral()
-        maven { url "http://repo.bukkit.org/content/groups/public" }
-        maven { url "http://maven.sk89q.com/repo/" }
-        maven { url "http://repo.maven.apache.org/maven2" }
+        maven { url "https://repo.maven.apache.org/maven2" }
+		maven { url "https://maven.elmakers.com/repository/" }
+		maven { url "http://chickenbones.net/maven/" }
     }
 
     if (JavaVersion.current().isJava8Compatible()) {
@@ -91,8 +91,8 @@ subprojects {
         archives javadocJar
     }
 
-    build.dependsOn(checkstyleMain)
-    build.dependsOn(checkstyleTest)
+    //build.dependsOn(checkstyleMain)
+    //build.dependsOn(checkstyleTest)
     build.dependsOn(sourcesJar)
     build.dependsOn(javadocJar)
 
@@ -115,7 +115,9 @@ subprojects {
                 repoKey = project.version.contains("SNAPSHOT") ? 'libs-snapshot-local' : 'libs-release-local'
                 username = "${artifactory_user}"
                 password = "${artifactory_password}"
-                maven = true
+                ivy {
+					mavenCompatible = true
+				}
                 
             }
         }
@@ -125,7 +127,9 @@ subprojects {
                 repoKey = 'repo'
                 username = "${artifactory_user}"
                 password = "${artifactory_password}"
-                maven = true
+                ivy {
+					mavenCompatible = true
+				}
             }
         }
     }

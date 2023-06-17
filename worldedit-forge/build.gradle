@@ -1,24 +1,17 @@
 buildscript {
-    repositories {
+	repositories {
         mavenCentral()
-        maven { url = "http://files.minecraftforge.net/maven" }
-        maven { url = "https://oss.sonatype.org/content/repositories/snapshots/" }
-        jcenter()
+        maven {
+            name = "github"
+            url = "https://github.com/juanmuscaria/maven/raw/master"
+        }
     }
-
     dependencies {
-        classpath 'net.minecraftforge.gradle:ForgeGradle:1.2-SNAPSHOT'
+        classpath 'net.minecraftforge.gradle:ForgeGradle:[1.2-1.4.6-SNAPSHOT,)'
     }
 }
 
 apply plugin: 'forge'
-
-repositories {
-    maven {
-        name 'forge'
-        url 'http://files.minecraftforge.net/maven/'
-    }
-}
 
 dependencies {
     compile project(':worldedit-core')
