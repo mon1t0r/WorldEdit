@@ -50,7 +50,7 @@ public class SnapshotUtilCommands {
     }
 
     @Command(
-            aliases = { "restore", "/restore" },
+            aliases = { "restore" },
             usage = "[snapshot]",
             desc = "Restore the selection from a snapshot",
             min = 0,

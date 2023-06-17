@@ -173,7 +173,7 @@ public class BiomeCommands {
     }
 
     @Command(
-            aliases = { "/setbiome" },
+            aliases = { "setbiome" },
             usage = "<biome>",
             flags = "p",
             desc = "Sets the biome of the player's current block or region.",

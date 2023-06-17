@@ -78,7 +78,7 @@ public class RegionCommands {
     }
 
     @Command(
-            aliases = { "/line" },
+            aliases = { "line" },
             usage = "<block> [thickness]",
             desc = "Draws a line segment between cuboid selection corners",
             help =
@@ -112,7 +112,7 @@ public class RegionCommands {
     }
 
     @Command(
-            aliases = { "/curve" },
+            aliases = { "curve" },
             usage = "<block> [thickness]",
             desc = "Draws a spline through selected points",
             help =
@@ -145,7 +145,7 @@ public class RegionCommands {
     }
 
     @Command(
-        aliases = { "/replace", "/re", "/rep" },
+        aliases = { "replace", "re", "rep" },
         usage = "[from-block] <to-block>",
         desc = "Replace all blocks in the selection with another",
         flags = "f",
@@ -163,7 +163,7 @@ public class RegionCommands {
     }
 
     @Command(
-        aliases = { "/overlay" },
+        aliases = { "overlay" },
         usage = "<block>",
         desc = "Set a block on top of blocks in the region",
         min = 1,
@@ -177,7 +177,7 @@ public class RegionCommands {
     }
 
     @Command(
-        aliases = { "/center", "/middle" },
+        aliases = { "center", "middle" },
         usage = "<block>",
         desc = "Set the center block(s)",
         min = 1,
@@ -191,7 +191,7 @@ public class RegionCommands {
     }
 
     @Command(
-        aliases = { "/naturalize" },
+        aliases = { "naturalize" },
         usage = "",
         desc = "3 layers of dirt on top then rock below",
         min = 0,
@@ -205,7 +205,7 @@ public class RegionCommands {
     }
 
     @Command(
-        aliases = { "/walls" },
+        aliases = { "walls" },
         usage = "<block>",
         desc = "Build the four sides of the selection",
         min = 1,
@@ -219,7 +219,7 @@ public class RegionCommands {
     }
 
     @Command(
-        aliases = { "/faces", "/outline" },
+        aliases = { "faces", "outline" },
         usage = "<block>",
         desc = "Build the walls, ceiling, and floor of a selection",
         min = 1,
@@ -233,7 +233,7 @@ public class RegionCommands {
     }
 
     @Command(
-        aliases = { "/smooth" },
+        aliases = { "smooth" },
         usage = "[iterations]",
         flags = "n",
         desc = "Smooth the elevation in the selection",
@@ -254,7 +254,7 @@ public class RegionCommands {
     }
 
     @Command(
-        aliases = { "/move" },
+        aliases = { "move" },
         usage = "[count] [direction] [leave-id]",
         flags = "s",
         desc = "Move the contents of the selection",
@@ -291,7 +291,7 @@ public class RegionCommands {
     }
 
     @Command(
-        aliases = { "/stack" },
+        aliases = { "stack" },
         usage = "[count] [direction]",
         flags = "sa",
         desc = "Repeat the contents of the selection",
@@ -331,7 +331,7 @@ public class RegionCommands {
     }
 
     @Command(
-        aliases = { "/regen" },
+        aliases = { "regen" },
         usage = "",
         desc = "Regenerates the contents of the selection",
         help =
@@ -355,7 +355,7 @@ public class RegionCommands {
     }
 
     @Command(
-            aliases = { "/deform" },
+            aliases = { "deform" },
             usage = "<expression>",
             desc = "Deforms a selected region with an expression",
             help =
@@ -405,7 +405,7 @@ public class RegionCommands {
     }
 
     @Command(
-        aliases = { "/hollow" },
+        aliases = { "hollow" },
         usage = "[<thickness>[ <block>]]",
         desc = "Hollows out the object contained in this selection",
         help =
@@ -427,7 +427,7 @@ public class RegionCommands {
     }
 
     @Command(
-            aliases = { "/forest" },
+            aliases = { "forest" },
             usage = "[type] [density]",
             desc = "Make a forest within the region",
             min = 0,
@@ -448,7 +448,7 @@ public class RegionCommands {
     }
 
     @Command(
-            aliases = { "/flora" },
+            aliases = { "flora" },
             usage = "[density]",
             desc = "Make flora within the region",
             min = 0,

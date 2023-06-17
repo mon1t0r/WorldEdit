@@ -49,7 +49,7 @@ public class GeneralCommands {
     }
 
     @Command(
-        aliases = { "/limit" },
+        aliases = { "limit" },
         usage = "<limit>",
         desc = "Modify block change limit",
         min = 1,
@@ -79,7 +79,7 @@ public class GeneralCommands {
     }
 
     @Command(
-        aliases = { "/fast" },
+        aliases = { "fast" },
         usage = "[on|off]",
         desc = "Toggle fast mode",
         min = 0,
@@ -109,7 +109,7 @@ public class GeneralCommands {
     }
 
     @Command(
-        aliases = { "/gmask", "gmask" },
+        aliases = { "gmask" },
         usage = "[mask]",
         desc = "Set the global mask",
         min = 0,
@@ -127,7 +127,7 @@ public class GeneralCommands {
     }
 
     @Command(
-        aliases = { "/toggleplace", "toggleplace" },
+        aliases = { "toggleplace" },
         usage = "",
         desc = "Switch between your position and pos1 for placement",
         min = 0,
@@ -143,7 +143,7 @@ public class GeneralCommands {
     }
 
     @Command(
-        aliases = { "/searchitem", "/l", "/search", "searchitem" },
+        aliases = { "l", "search", "searchitem" },
         usage = "<query>",
         flags = "bi",
         desc = "Search for an item",

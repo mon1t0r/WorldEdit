@@ -175,7 +175,7 @@ public class ToolCommands {
     }
 
     @Command(
-            aliases = { "lrbuild", "/lrbuild" },
+            aliases = { "lrbuild" },
             usage = "<leftclick block> <rightclick block>",
             desc = "Long-range building tool",
             min = 2,

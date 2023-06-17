@@ -45,7 +45,7 @@ public class HistoryCommands {
     }
 
     @Command(
-        aliases = { "/undo", "undo" },
+        aliases = { "undo" },
         usage = "[times] [player]",
         desc = "Undoes the last action",
         min = 0,
@@ -78,7 +78,7 @@ public class HistoryCommands {
     }
 
     @Command(
-        aliases = { "/redo", "redo" },
+        aliases = { "redo" },
         usage = "[times] [player]",
         desc = "Redoes the last action (from history)",
         min = 0,
@@ -112,7 +112,7 @@ public class HistoryCommands {
     }
 
     @Command(
-        aliases = { "/clearhistory", "clearhistory" },
+        aliases = { "clearhistory" },
         usage = "",
         desc = "Clear your history",
         min = 0,

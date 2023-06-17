@@ -69,7 +69,7 @@ public class ClipboardCommands {
     }
 
     @Command(
-        aliases = { "/copy" },
+        aliases = { "copy" },
         flags = "em",
         desc = "Copy the selection to the clipboard",
         help = "Copy the selection to the clipboard\n" +
@@ -98,7 +98,7 @@ public class ClipboardCommands {
     }
 
     @Command(
-        aliases = { "/cut" },
+        aliases = { "cut" },
         flags = "em",
         usage = "[leave-id]",
         desc = "Cut the selection to the clipboard",
@@ -130,7 +130,7 @@ public class ClipboardCommands {
     }
 
     @Command(
-        aliases = { "/paste" },
+        aliases = { "paste" },
         usage = "",
         flags = "sao",
         desc = "Paste the clipboard's contents",
@@ -173,7 +173,7 @@ public class ClipboardCommands {
     }
 
     @Command(
-        aliases = { "/rotate" },
+        aliases = { "rotate" },
         usage = "<y-axis> [<x-axis>] [<z-axis>]",
         desc = "Rotate the contents of the clipboard",
         help = "Non-destructively rotate the contents of the clipboard.\n" +
@@ -198,7 +198,7 @@ public class ClipboardCommands {
     }
 
     @Command(
-        aliases = { "/flip" },
+        aliases = { "flip" },
         usage = "[<direction>]",
         desc = "Flip the contents of the clipboard",
         help =
@@ -218,7 +218,7 @@ public class ClipboardCommands {
     }
 
     @Command(
-        aliases = { "/load" },
+        aliases = { "load" },
         usage = "<filename>",
         desc = "Load a schematic into your clipboard",
         min = 0,
@@ -231,7 +231,7 @@ public class ClipboardCommands {
     }
 
     @Command(
-        aliases = { "/save" },
+        aliases = { "save" },
         usage = "<filename>",
         desc = "Save a schematic into your clipboard",
         min = 0,

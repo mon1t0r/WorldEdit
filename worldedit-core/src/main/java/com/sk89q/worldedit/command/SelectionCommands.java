@@ -75,7 +75,7 @@ public class SelectionCommands {
     }
 
     @Command(
-        aliases = { "/pos1" },
+        aliases = { "pos1" },
         usage = "[coordinates]",
         desc = "Set position 1",
         min = 0,
@@ -109,7 +109,7 @@ public class SelectionCommands {
     }
 
     @Command(
-        aliases = { "/pos2" },
+        aliases = { "pos2" },
         usage = "[coordinates]",
         desc = "Set position 2",
         min = 0,
@@ -144,7 +144,7 @@ public class SelectionCommands {
     }
 
     @Command(
-        aliases = { "/hpos1" },
+        aliases = { "hpos1" },
         usage = "",
         desc = "Set position 1 to targeted block",
         min = 0,
@@ -169,7 +169,7 @@ public class SelectionCommands {
     }
 
     @Command(
-        aliases = { "/hpos2" },
+        aliases = { "hpos2" },
         usage = "",
         desc = "Set position 2 to targeted block",
         min = 0,
@@ -194,7 +194,7 @@ public class SelectionCommands {
     }
 
     @Command(
-        aliases = { "/chunk" },
+        aliases = { "chunk" },
         usage = "[x,z coordinates]",
         flags = "sc",
         desc = "Set the selection to your current chunk.",
@@ -266,7 +266,7 @@ public class SelectionCommands {
     }
 
     @Command(
-        aliases = { "/wand" },
+        aliases = { "wand" },
         usage = "",
         desc = "Get the wand object",
         min = 0,
@@ -299,7 +299,7 @@ public class SelectionCommands {
     }
 
     @Command(
-        aliases = { "/expand" },
+        aliases = { "expand" },
         usage = "<amount> [reverse-amount] <direction>",
         desc = "Expand the selection area",
         min = 1,
@@ -394,7 +394,7 @@ public class SelectionCommands {
     }
 
     @Command(
-        aliases = { "/contract" },
+        aliases = { "contract" },
         usage = "<amount> [reverse-amount] [direction]",
         desc = "Contract the selection area",
         min = 1,
@@ -469,7 +469,7 @@ public class SelectionCommands {
     }
 
     @Command(
-        aliases = { "/shift" },
+        aliases = { "shift" },
         usage = "<amount> [direction]",
         desc = "Shift the selection area",
         min = 1,
@@ -511,7 +511,7 @@ public class SelectionCommands {
     }
 
     @Command(
-        aliases = { "/outset" },
+        aliases = { "outset" },
         usage = "<amount>",
         desc = "Outset the selection area",
         help =
@@ -534,7 +534,7 @@ public class SelectionCommands {
     }
 
     @Command(
-        aliases = { "/inset" },
+        aliases = { "inset" },
         usage = "<amount>",
         desc = "Inset the selection area",
         help =
@@ -576,7 +576,7 @@ public class SelectionCommands {
     }
 
     @Command(
-        aliases = { "/size" },
+        aliases = { "size" },
         flags = "c",
         usage = "",
         desc = "Get information about the selection",
@@ -620,7 +620,7 @@ public class SelectionCommands {
 
 
     @Command(
-        aliases = { "/count" },
+        aliases = { "count" },
         usage = "<block>",
         desc = "Counts the number of a certain type of block",
         flags = "d",
@@ -646,7 +646,7 @@ public class SelectionCommands {
     }
 
     @Command(
-        aliases = { "/distr" },
+        aliases = { "distr" },
         usage = "",
         desc = "Get the distribution of blocks in the selection",
         help =
@@ -708,7 +708,7 @@ public class SelectionCommands {
     }
 
     @Command(
-        aliases = { "/sel", ";", "/desel", "/deselect" },
+        aliases = { "sel", ";", "desel", "deselect" },
         flags = "d",
         usage = "[cuboid|extend|poly|ellipsoid|sphere|cyl|convex]",
         desc = "Choose a region selector",

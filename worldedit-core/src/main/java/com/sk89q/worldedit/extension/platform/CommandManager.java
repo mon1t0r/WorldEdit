@@ -155,7 +155,7 @@ public final class CommandManager {
                             .describeAs("WorldEdit commands")
                             .registerMethods(new WorldEditCommands(worldEdit))
                             .parent()
-                        .group("schematic", "schem", "/schematic", "/schem")
+                        .group("schematic", "schem")
                             .describeAs("Schematic commands for saving/loading areas")
                             .registerMethods(new SchematicCommands(worldEdit))
                             .parent()

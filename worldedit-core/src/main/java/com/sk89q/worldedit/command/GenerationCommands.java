@@ -62,7 +62,7 @@ public class GenerationCommands {
     }
 
     @Command(
-        aliases = { "/hcyl" },
+        aliases = { "hcyl" },
         usage = "<pattern> <radius>[,<radius>] [height]",
         desc = "Generates a hollow cylinder.",
         help =
@@ -80,7 +80,7 @@ public class GenerationCommands {
     }
 
     @Command(
-        aliases = { "/cyl" },
+        aliases = { "cyl" },
         usage = "<block> <radius>[,<radius>] [height]",
         flags = "h",
         desc = "Generates a cylinder.",
@@ -122,7 +122,7 @@ public class GenerationCommands {
     }
 
     @Command(
-        aliases = { "/hsphere" },
+        aliases = { "hsphere" },
         usage = "<block> <radius>[,<radius>,<radius>] [raised?]",
         desc = "Generates a hollow sphere.",
         help =
@@ -140,7 +140,7 @@ public class GenerationCommands {
     }
 
     @Command(
-        aliases = { "/sphere" },
+        aliases = { "sphere" },
         usage = "<block> <radius>[,<radius>,<radius>] [raised?]",
         flags = "h",
         desc = "Generates a filled sphere.",
@@ -218,7 +218,7 @@ public class GenerationCommands {
     }
 
     @Command(
-            aliases = { "/hpyramid" },
+            aliases = { "hpyramid" },
             usage = "<block> <size>",
             desc = "Generate a hollow pyramid",
             min = 2,
@@ -231,7 +231,7 @@ public class GenerationCommands {
     }
 
     @Command(
-        aliases = { "/pyramid" },
+        aliases = { "pyramid" },
         usage = "<block> <size>",
         flags = "h",
         desc = "Generate a filled pyramid",
@@ -249,7 +249,7 @@ public class GenerationCommands {
     }
 
     @Command(
-        aliases = { "/generate", "/gen", "/g" },
+        aliases = { "generate", "gen", "g" },
         usage = "<block> <expression>",
         desc = "Generates a shape according to a formula.",
         help =
@@ -315,7 +315,7 @@ public class GenerationCommands {
     }
 
     @Command(
-        aliases = { "/generatebiome", "/genbiome", "/gb" },
+        aliases = { "generatebiome", "genbiome", "gb" },
         usage = "<block> <expression>",
         desc = "Sets biome according to a formula.",
         help =
